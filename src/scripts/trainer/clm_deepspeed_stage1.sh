@@ -11,8 +11,8 @@ time torchrun --nproc_per_node=2 /home/sourab/deepspeed-test/src/language-modeli
 --do_train \
 --do_eval \
 --evaluation_strategy "epoch" \
---per_device_train_batch_size 32 \
---per_device_eval_batch_size 32 \
+--per_device_train_batch_size 34 \
+--per_device_eval_batch_size 34 \
 --learning_rate 5e-4 \
 --logging_steps 100 \
 --save_strategy "epoch" \
